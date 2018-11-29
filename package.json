@@ -3,14 +3,40 @@
   "version": "1.0.0",
   "description": "large file finder.",
   "main": "index.js",
-  "repository": "https://github.com/CatchZeng/large-file-finder.git",
+  "files": [
+    "README.md",
+    "dist/"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com:CatchZeng/large-file-finder.git"
+  },
+  "keywords": [
+    "file",
+    "finder",
+    "fat",
+    "large"
+  ],
+  "author": "CatchZeng",
+  "license": "ISC",
   "dependencies": {
     "walker": "^1.0.7"
   },
-  "devDependencies": {},
-  "scripts": {
-    "start": "node demo.js"
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "lodash": "^4.17.11",
+    "shebang-loader": "0.0.1",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0"
   },
-  "author": "",
-  "license": "ISC"
+  "scripts": {
+    "start": "node demo.js",
+    "build": "webpack",
+    "pub": "npm run build && npm publish"
+  }
 }

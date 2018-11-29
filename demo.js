@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-const LargeFileFinder = require("./finder");
+const LargeFileFinder = require("./src/index");
 const finder = new LargeFileFinder();
 
 finder.find(

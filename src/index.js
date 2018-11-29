@@ -1,8 +1,7 @@
-#! /usr/bin/env node
+#!/usr/bin/env node
 
 const { isString } = require("util");
 const fs = require("fs");
-const path = require("path");
 const walker = require("walker");
 
 class LargeFileFinder {
